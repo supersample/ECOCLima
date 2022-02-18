@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    transition: all .2s linear;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+#menu li > a{
+    font-size: 18px;
+}
+
+#menu li > a:hover{
+    color: red;
+}
+
+.nav-link.active{
+    text-decoration: underline;
+}
+
+.container-fluid a{
+    text-decoration: none;
+}
+
+#promociones{
+    padding-top: 10rem !important;
+}
+
+#contenedorPromociones:hover{
+    transform: scale(1.1);
+}
+
+.carousel-inner{
+    max-height: 40rem;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: red;
+}
+
+/* INICIO MEDIA QUERIES */
+@media (max-width:768px){
+    #promociones, #empresa, #contacto{
+        width: 90% !important;
+    }
+}
+/* FIN MEDIA QUERIES */
