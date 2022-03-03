@@ -1,168 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-*{
-    transition: all .2s linear;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Montserrat", sans-serif;
+body {
+  font-family: 'Montserrat';
 }
 
-/* INICIO NAVBAR */
-.header{
-    background-color: white;
+.header {
+  background-color: white;
 }
 
-.menu-bar{
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-    margin-bottom: 1.5rem;
+.menu-bar {
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
-.nav-link{
-    font-size: 1.1rem;
-    margin: 0.5rem;
-    color: black !important;
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0.5rem;
+  color: black;
 }
 
-.nav-link.active{
-    color: black !important;
-    color: red !important;
+.nav-link.active {
+  color: red;
 }
 
-.nav-link:hover{
-    transform: scale(1.3);
-    color: red !important;
+.nav-link:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: red;
 }
 
-.navbar-nav{
-    text-align: right;
+.navbar-nav {
+  text-align: right;
 }
 
-.navbar .fa{
-    color: black;
-    font-size: 2rem;
+.navbar .fa {
+  color: black;
+  font-size: 2rem;
 }
 
-.navbar-brand img{
-    width: 15rem;
+.navbar-brand img {
+  width: 15rem;
 }
-/* FIN NAVBAR */
 
-/* INICIO SLIDE */
 .carousel.slide {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
-/* FIN SLIDE */
 
-/* INICIO VARIOS */
-.btn-primary{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: red;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+.btn-primary {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .btn-primary:hover,
-#btncontacto:hover{
-    background-color: black;
+#btncontacto:hover {
+  background-color: black;
 }
 
-#btncontacto{
-    background-color: red;
-    border: none;
+#btncontacto {
+  background-color: red;
+  border: none;
 }
 
-/* FIN VARIOS */
-
-/* INICIO PROMOCIONES */
-#promociones{
-    animation-duration: 0.5s;
-    animation-name: intermitente;
-    animation-delay: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+#promociones {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 #promociones h2,
-#promociones p{
-    color: red !important;
+#promociones p {
+  color: red;
 }
 
-@keyframes intermitente{
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
+@-webkit-keyframes intermitente {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.container-fluid a{
-    text-decoration: none;
+@keyframes intermitente {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-#contenedorPromociones:hover{
-    transform: scale(1.04);
-}
-/* FIN PROMOCIONES */
-
-/* INICIO CATEGORIAS */
-.card{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.2s ease-in-out;
-    box-sizing: border-box;
-    margin-top:10px;
-    margin-bottom:10px;
-    background-color:#FFF;
+.container-fluid a {
+  text-decoration: none;
 }
 
-.card:hover{
-    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.card > .card-inner{
-    padding:10px;
-}
-.card .header h2, h3{
-    margin-bottom: 0px;
-    margin-top:0px;
-}
-.card .header{
-    margin-bottom:5px;
-}
-.card img{
-    width:100%;
-}
-/* FIN CATEGORIAS */
-
-/* INICIO FOOTER */
-footer{
-    background-color: red;
-    color: white;
+#contenedorPromociones:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
-footer li a{
-    text-decoration: none;
-    color: white;
+.card {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #FFF;
 }
-/* FIN FOOTER */
 
+.card img {
+  width: 100%;
+}
 
+.card .header {
+  margin-bottom: 5px;
+}
 
+.card .header h2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 
+.card:hover {
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 
+.card > .card-inner {
+  padding: 10px;
+}
 
-/* INICIO MEDIA QUERIES */
+footer {
+  background-color: red;
+  color: white;
+}
 
-/* FIN MEDIA QUERIES */
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer li a:hover {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

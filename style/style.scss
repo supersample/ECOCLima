@@ -1,0 +1,169 @@
+$color1: white;
+$color2: black;
+$color3: red;
+$shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    transition: all .2s linear;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+// INICIO HEADER
+.header{
+    background-color: $color1;
+}
+
+.menu-bar{
+    box-shadow: $shadow;
+    margin-bottom: 1.5rem;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    color: $color2;
+}
+
+.nav-link.active{
+    color: $color3;
+}
+
+.nav-link:hover{
+    transform: scale(1.3);
+    color: $color3;
+}
+
+.navbar-nav{
+    text-align: right; 
+}
+
+.navbar .fa{
+    color: $color2;
+    font-size: 2rem;
+}
+
+.navbar-brand img{
+    width: 15rem;
+}
+// FIN HEADER
+
+.carousel.slide{
+    width: 85%;
+    margin: 0 auto;
+}
+
+// INICIO BOTONES
+.btn-primary{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: $color3;
+    color: $color1;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover,
+#btncontacto:hover{
+    background-color: $color2;
+}
+
+#btncontacto{
+    background-color: $color3;
+    border: none;
+}
+// FIN BOTONES
+
+// INICIO PROMOCIONES
+#promociones{
+    animation-duration: 0.5s;
+    animation-name: intermitente;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#promociones h2,
+#promociones p{
+    color: $color3;
+}
+
+@keyframes intermitente{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.container-fluid a{
+    text-decoration: none;
+}
+
+#contenedorPromociones:hover{
+    transform: scale(1.04);
+}
+// FIN PROMOCIONES
+
+// INICIO PRODUCTOS
+.card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+
+    img{
+        width: 100%;
+    }
+
+    .header{
+        margin-bottom: 5px;
+    }
+
+    .header h2{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+}
+
+.card:hover{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card > .card-inner{
+    padding: 10px;
+}
+// FIN PRODUCTOS
+
+// INICIO FOOTER
+footer{
+    background-color: $color3;
+    color: $color1;
+
+    li a{
+        text-decoration: none;
+        color: $color1;
+    }
+
+    li a:hover{
+        color: $color2;
+    }
+}
+// FIN FOOTER
