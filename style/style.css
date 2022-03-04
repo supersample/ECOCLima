@@ -49,12 +49,26 @@ body {
   width: 15rem;
 }
 
+.icons i,
+.icons a {
+  cursor: pointer;
+  margin-left: .5rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  background-color: red;
+}
+
 .carousel.slide {
   width: 85%;
   margin: 0 auto;
 }
 
-.btn-primary {
+.btn-primary, .card .content a {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -70,7 +84,7 @@ body {
   border-radius: 5px;
 }
 
-.btn-primary:hover,
+.btn-primary:hover, .card .content a:hover,
 #btncontacto:hover {
   background-color: black;
 }
@@ -141,22 +155,13 @@ body {
   width: 100%;
 }
 
-.card .header {
-  margin-bottom: 5px;
-}
-
-.card .header h2 {
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
 .card:hover {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card > .card-inner {
-  padding: 10px;
+  padding-bottom: 6.5rem;
 }
 
 footer {
@@ -171,5 +176,30 @@ footer li a {
 
 footer li a:hover {
   color: black;
+}
+
+.btn--soc1 {
+  font-size: 2rem;
+  color: #3b5998;
+}
+
+.btn--soc2 {
+  font-size: 2rem;
+  color: #00acee;
+}
+
+.btn--soc3 {
+  font-size: 2rem;
+  color: black;
+}
+
+.btn--soc4 {
+  font-size: 2rem;
+  color: #833AB4;
+}
+
+.btn--soc5 {
+  font-size: 2rem;
+  color: #50c7c7;
 }
 /*# sourceMappingURL=style.css.map */

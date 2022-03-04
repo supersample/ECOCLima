@@ -42,7 +42,7 @@ body{
 }
 
 .navbar-nav{
-    text-align: right; 
+    text-align: right;
 }
 
 .navbar .fa{
@@ -52,6 +52,24 @@ body{
 
 .navbar-brand img{
     width: 15rem;
+}
+
+@mixin estilos($width, $heigth, $bgcolor) {
+    height: $heigth;
+    width: $width;
+    background-color: $bgcolor;
+}
+
+.icons i,
+.icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    @include estilos(2rem, 2rem, red);
 }
 // FIN HEADER
 
@@ -132,15 +150,6 @@ body{
     img{
         width: 100%;
     }
-
-    .header{
-        margin-bottom: 5px;
-    }
-
-    .header h2{
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
 }
 
 .card:hover{
@@ -148,7 +157,11 @@ body{
 }
 
 .card > .card-inner{
-    padding: 10px;
+    padding-bottom: 6.5rem;
+}
+
+.card .content a{
+    @extend .btn-primary;
 }
 // FIN PRODUCTOS
 
@@ -164,6 +177,21 @@ footer{
 
     li a:hover{
         color: $color2;
+    }
+}
+
+$social: (
+    soc1: #3b5998,
+    soc2: #00acee,
+    soc3: black,
+    soc4: #833AB4,
+    soc5: #50c7c7,
+);
+
+@each $soc, $color in $social {
+    .btn--#{$soc} {
+        font-size: 2rem;
+        color: $color;
     }
 }
 // FIN FOOTER
