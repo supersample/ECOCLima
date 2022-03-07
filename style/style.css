@@ -133,6 +133,7 @@ body {
   right: 3%;
   font-size: 4rem;
   color: #25D366;
+  z-index: 1000;
 }
 
 .whatsapp:hover {
@@ -300,6 +301,24 @@ footer .icons-social a i:hover {
   .whatsapp {
     bottom: 13%;
     right: 6%;
+  }
+  .slide {
+    display: none;
+  }
+  .slide-vertical {
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .btn-primary, .card .content a {
+    position: absolute;
+    top: 95%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .slide-vertical {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

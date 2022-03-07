@@ -139,6 +139,7 @@ body{
     right: 3%;
     font-size: 4rem;
     color: #25D366;
+    z-index: 1000;
 
 }
 
@@ -146,7 +147,6 @@ body{
     transform: scale(1.2);
     color: $color2;
 }
-
 // FIN VARIOS
 
 // INICIO BOTONES
@@ -237,11 +237,9 @@ body{
 // FIN PRODUCTOS
 
 // INICIO CONTACTO
-
 #contacto{
     width: 30rem;
 }
-
 // FIN CONTACTO
 
 // INICIO FOOTER
@@ -293,6 +291,28 @@ $social: (
     right: 6%;
     }
 
+    .slide{
+        display: none;
+    }
+
+    .slide-vertical{
+        overflow: hidden;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .btn-primary{
+    position: absolute;
+    top: 95%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .slide-vertical{
+        display: none;
+    }
+
+    
 }
 
 // FIN MEDIA QUERIES
