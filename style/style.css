@@ -142,6 +142,38 @@ body {
   color: black;
 }
 
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: red;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: red;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+  display: none;
+}
+
 #hero-section h1 {
   font-size: 1.8rem;
 }
@@ -416,38 +448,6 @@ body {
   text-decoration: none;
 }
 
-.section-title {
-  position: relative;
-  display: inline-block;
-}
-
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  left: -55px;
-  margin-top: -1px;
-  background: var(--primary);
-}
-
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  right: -55px;
-  margin-top: -1px;
-  background: var(--primary);
-}
-
-.section-title.text-start::before,
-.section-title.text-end::after {
-  display: none;
-}
-
 footer {
   background-color: red;
   color: white;
@@ -528,37 +528,5 @@ footer .icons-social a i:hover {
   .slide-vertical {
     display: none;
   }
-}
-
-.section-title {
-  position: relative;
-  display: inline-block;
-}
-
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  left: -55px;
-  margin-top: -1px;
-  background: red;
-}
-
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 45px;
-  height: 2px;
-  top: 50%;
-  right: -55px;
-  margin-top: -1px;
-  background: red;
-}
-
-.section-title.text-start::before,
-.section-title.text-end::after {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
