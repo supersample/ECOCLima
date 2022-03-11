@@ -123,11 +123,6 @@ body{
 // FIN HEADER
 
 // INICIO VARIOS
-.carousel.slide{
-    width: 85%;
-    margin: 0 auto;
-}
-
 .whatsapp{
     position: fixed;
     width: 2.5rem;
@@ -181,7 +176,7 @@ body{
 // INICIO HERO
 #hero-section{
     h1{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     h2{
@@ -192,11 +187,11 @@ body{
         font-size: 1.3rem;
         color: grey;
     }
-}
-// FIN HERO
 
-// INICIO BOTONES
-.btn-primary{
+    position: relative;
+}
+
+#hero-section .btn{
     position: absolute;
     top: 90%;
     left: 50%;
@@ -212,13 +207,21 @@ body{
     z-index: 1000;
 }
 
-.btn-primary:hover{
+#hero-section .btn:hover{
     background-color: $color2;
 }
+// FIN HERO
 
-.hot-deal .cta-btn{
-    margin-top: 15px;
+// INICIO SLIDE
+.carousel.slide{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.carousel .btn{
     position: absolute;
+    top: 90%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: $color3;
@@ -228,28 +231,17 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    z-index: 1000;
 }
 
-.hot-deal .cta-btn:hover{
+.carousel .btn:hover{
     background-color: $color2;
 }
-
-.contacto .cta-btn{
-    background-color: $color3;
-    color: $color1;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.contacto .cta-btn:hover{
-    background-color: $color2;
-}
-// FIN BOTONES
+// FIN SLIDE
 
 // INICIO PROMOCIONES
 #promociones,
-#hero-section span{
+#hero-section h1{
     animation-duration: 0.5s;
     animation-name: intermitente;
     animation-delay: 1s;
@@ -259,7 +251,7 @@ body{
 
 #promociones h2,
 #promociones p,
-#hero-section span{
+#hero-section h1{
     color: $color3;
 }
 
@@ -337,6 +329,24 @@ body{
 .hot-deal p{
     text-transform: uppercase;
     font-size: 24px;
+}
+
+.hot-deal .btn{
+    margin-top: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: $color3;
+    color: $color1;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hot-deal .btn:hover{
+    background-color: $color2;
 }
 // FIN NUEVOS PRODUCTOS
 
@@ -452,6 +462,17 @@ body{
 // FIN BENEFICIOS
 
 // INICIO CONTACTO
+.contacto .btn{
+    background-color: $color3;
+    color: $color1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contacto .btn:hover{
+    background-color: $color2;
+}
 // FIN CONTACTO
 
 // INICIO FOOTER
@@ -511,14 +532,6 @@ $social: (
         overflow: hidden;
         width: 85%;
         margin: 0 auto;
-    }
-    
-    .btn-primary{
-        top: 95%;
-    }
-
-    #hero-section .btn-primary{
-        top: 150%;
     }
 }
 

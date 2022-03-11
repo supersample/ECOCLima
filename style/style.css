@@ -119,11 +119,6 @@ body {
           transform: rotate(360deg);
 }
 
-.carousel.slide {
-  width: 85%;
-  margin: 0 auto;
-}
-
 .whatsapp {
   position: fixed;
   width: 2.5rem;
@@ -174,8 +169,12 @@ body {
   display: none;
 }
 
+#hero-section {
+  position: relative;
+}
+
 #hero-section h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 #hero-section h2 {
@@ -187,7 +186,7 @@ body {
   color: grey;
 }
 
-.btn-primary {
+#hero-section .btn {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -204,13 +203,19 @@ body {
   z-index: 1000;
 }
 
-.btn-primary:hover {
+#hero-section .btn:hover {
   background-color: black;
 }
 
-.hot-deal .cta-btn {
-  margin-top: 15px;
+.carousel.slide {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.carousel .btn {
   position: absolute;
+  top: 90%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -221,26 +226,15 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  z-index: 1000;
 }
 
-.hot-deal .cta-btn:hover {
-  background-color: black;
-}
-
-.contacto .cta-btn {
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.contacto .cta-btn:hover {
+.carousel .btn:hover {
   background-color: black;
 }
 
 #promociones,
-#hero-section span {
+#hero-section h1 {
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-name: intermitente;
@@ -255,7 +249,7 @@ body {
 
 #promociones h2,
 #promociones p,
-#hero-section span {
+#hero-section h1 {
   color: red;
 }
 
@@ -340,6 +334,25 @@ body {
 .hot-deal p {
   text-transform: uppercase;
   font-size: 24px;
+}
+
+.hot-deal .btn {
+  margin-top: 15px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hot-deal .btn:hover {
+  background-color: black;
 }
 
 .categorias {
@@ -448,6 +461,18 @@ body {
   text-decoration: none;
 }
 
+.contacto .btn {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contacto .btn:hover {
+  background-color: black;
+}
+
 footer {
   background-color: red;
   color: white;
@@ -515,12 +540,6 @@ footer .icons-social a i:hover {
     overflow: hidden;
     width: 85%;
     margin: 0 auto;
-  }
-  .btn-primary {
-    top: 95%;
-  }
-  #hero-section .btn-primary {
-    top: 150%;
   }
 }
 
