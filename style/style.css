@@ -462,7 +462,8 @@ body {
 }
 
 .contacto .btn,
-.usuario .btn {
+.usuario .btn,
+.beneficios .btn {
   background-color: red;
   color: white;
   border: none;
@@ -471,7 +472,8 @@ body {
 }
 
 .contacto .btn:hover,
-.usuario .btn:hover {
+.usuario .btn:hover,
+.beneficios .btn:hover {
   background-color: black;
 }
 

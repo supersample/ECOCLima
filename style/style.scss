@@ -458,12 +458,10 @@ body{
 }
 // FIN NOVEDADES
 
-// INICIO BENEFICIOS
-// FIN BENEFICIOS
-
 // INICIO CONTACTO
 .contacto .btn,
-.usuario .btn{
+.usuario .btn,
+.beneficios .btn{
     background-color: $color3;
     color: $color1;
     border: none;
@@ -472,7 +470,8 @@ body{
 }
 
 .contacto .btn:hover,
-.usuario .btn:hover{
+.usuario .btn:hover,
+.beneficios .btn:hover{
     background-color: $color2;
 }
 // FIN CONTACTO
@@ -482,6 +481,7 @@ body{
     width: 25rem;
 }
 // FIN USUARIO
+
 // INICIO FOOTER
 footer{
     background-color: $color3;
