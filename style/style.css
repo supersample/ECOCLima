@@ -461,7 +461,8 @@ body {
   text-decoration: none;
 }
 
-.contacto .btn {
+.contacto .btn,
+.usuario .btn {
   background-color: red;
   color: white;
   border: none;
@@ -469,8 +470,13 @@ body {
   border-radius: 5px;
 }
 
-.contacto .btn:hover {
+.contacto .btn:hover,
+.usuario .btn:hover {
   background-color: black;
+}
+
+.usuario {
+  width: 25rem;
 }
 
 footer {

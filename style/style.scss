@@ -462,7 +462,8 @@ body{
 // FIN BENEFICIOS
 
 // INICIO CONTACTO
-.contacto .btn{
+.contacto .btn,
+.usuario .btn{
     background-color: $color3;
     color: $color1;
     border: none;
@@ -470,11 +471,17 @@ body{
     border-radius: 5px;
 }
 
-.contacto .btn:hover{
+.contacto .btn:hover,
+.usuario .btn:hover{
     background-color: $color2;
 }
 // FIN CONTACTO
 
+// INICIO USUARIO
+.usuario{
+    width: 25rem;
+}
+// FIN USUARIO
 // INICIO FOOTER
 footer{
     background-color: $color3;
